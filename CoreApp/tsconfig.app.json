@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": []
+  },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts"
+  ],
+  "include": [
+    "src/**/*.ts",
+    "./projects/auth-example/src/**/*.ts",
+    "./projects/project-plan-example/src/**/*.ts"
+  ],
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts",
+    "./projects/auth-example/src/**/*spec.ts",
+    "./projects/project-plan-example/src/**/*spec.ts",
+    "./projects/auth-example/src/app/app.module.ts",
+    "./projects/project-plan-example/src/app/app.module.ts",
+    "./projects/auth-example/src/main.ts",
+    "./projects/project-plan-example/src/main.ts",
+    "./projects/auth-example/src/test.ts",
+    "./projects/project-plan-example/src/test.ts"
+  ]
+}
